@@ -40,7 +40,7 @@ namespace Maui_MZ.Model
         public double _1h { get; set; }
     }
 
-    public class Clima
+    public class Clima_MZ
     {
         public Coord coord { get; set; }
         public List<Weather> weather { get; set; }

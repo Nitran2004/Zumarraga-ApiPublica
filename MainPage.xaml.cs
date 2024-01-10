@@ -24,7 +24,7 @@ public partial class MainPage : ContentPage
 			if (response.IsSuccessStatusCode)
 			{
 				string content = response.Content.ReadAsStringAsync().Result;
-				var weatherData = JsonConvert.DeserializeObject<Clima>(content);
+				var weatherData = JsonConvert.DeserializeObject<Clima_MZ>(content);
 				weatherLabel.Text = weatherData.weather[0].description;
 				pais.Text = weatherData.sys.country;
 				Ciudad.Text = weatherData.name;
